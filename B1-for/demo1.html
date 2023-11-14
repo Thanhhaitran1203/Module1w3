@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo1</title>
+</head>
+<body>
+<label for="number">Nhập vào số bất kì </label> <input type="text" name="" id="number"> <br>
+    <p id="result" onclick="tinh()">Tính tổng</p>
+    <script>
+        function tinh() {
+            let number = +document.getElementById("number").value;
+            let result = 0;
+            for (let i = number,j=i+10; i<j ; i++) {
+                if (i%2==0){
+                    result = result + i;
+                }
+            }
+            document.getElementById("result").innerText=result;
+        }
+    </script>
+</body>
+</html>
