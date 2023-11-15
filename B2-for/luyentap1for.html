@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện Tập 1</title>
+</head>
+<body>
+<!--    Bài 1-->
+<!--    <script>-->
+<!--        for (let i = 0; i < 100; i++) {-->
+<!--            if (i===99){-->
+<!--                alert("Hoàn thành");-->
+<!--            }-->
+<!--        }-->
+<!--    </script>-->
+
+<!--Bài 2-->
+<!--<script>-->
+<!--let nhietdo= +prompt("Nhiệt độ hiện tại");-->
+<!--    if (nhietdo>100){-->
+<!--        alert("hạ nhiệt gấp");-->
+<!--    }else if (nhietdo<20){-->
+<!--        alert("Tăng nhiệt độ đi");-->
+<!--    }else {-->
+<!--        alert("Bình thường");-->
+<!--    }-->
+<!--</script>-->
+
+
+<!--Bài3-->
+<!--<script>-->
+<!--    let a = 0;-->
+<!--    let b = 1;-->
+<!--    let count = 2;-->
+<!--    let text = "0 1 "-->
+<!--    while (count<=20){-->
+<!--        let c = a + b;-->
+<!--        text = text + c + " ";-->
+<!--        a = b;-->
+<!--        b = c;-->
+<!--        count++;-->
+<!--    }-->
+<!--    document.write(text);-->
+<!--</script>-->
+
+<!--Bài 4-->
+<!--<script>-->
+<!--    let a = 0;-->
+<!--    let b = 1;-->
+<!--    let c = a + b;-->
+<!--    while (c % 5 != 0){-->
+<!--        a = b;-->
+<!--        b = c;-->
+<!--        c = a + b;-->
+<!--    }-->
+<!--    console.log(c);-->
+<!--    document.write("Số đầu tiên trong dãy fibonacci chia hết cho 5:" + c);-->
+<!--</script>-->
+
+
+<!--Bài 5-->
+<!--<script>-->
+<!--    let a = 0;-->
+<!--    let b = 1;-->
+<!--    let count = 2;-->
+<!--    let total = 1-->
+<!--    while (count<=20){-->
+<!--        let c = a + b;-->
+<!--        total = total + c;-->
+<!--        a = b;-->
+<!--        b = c;-->
+<!--        count++;-->
+<!--    }-->
+<!--    document.write(total);-->
+<!--</script>-->
+
+<!--Bài 6-->
+<!--<script>-->
+<!--    let total = 0;-->
+<!--    let count = 1;-->
+<!--    let i = 0;-->
+<!--    while (count<=30){-->
+<!--        if (i%7==0){-->
+<!--            total = total + i;-->
+<!--            count++-->
+<!--        }-->
+<!--        i++;-->
+<!--    }-->
+<!--    document.write(total);-->
+<!--</script>-->
+
+<!--Bài 7-->
+<!--<script>-->
+<!--    result = "";-->
+<!--    for (let i = 1; i <= 100 ; i++) {-->
+<!--        if ((i%5 == 0 && i%3 == 0)){-->
+<!--            result = result + "FizzBuzz";-->
+<!--        }else if (i%3 == 0){-->
+<!--            result = result + "Fizz";-->
+<!--        }else if(i%5==0) {-->
+<!--            result = result + "Buzz";-->
+<!--        }else{-->
+<!--            result = result + i;-->
+<!--        }-->
+
+<!--    }-->
+<!--    document.write(result);-->
+<!--</script>-->
+
+
+<!--Bài 8-->
+<button onclick="doanso()">Bắt đầu</button>
+<script>
+    function doanso() {
+        let number = +prompt("Nhập giới hạn mà bạn muốn");
+        let number_ran = Math.floor(Math.random() * number);
+        let number_check = +prompt ("Nhập số bạn đoán");
+        let count = 0;
+        while (number_check !== number_ran) {
+            count++;
+            if (count == 4) {
+                break;
+            } else if (number_check < number_ran) {
+                alert("Số bạn đoán bé hơn");
+            } else {
+                alert ("Số bạn đoán lớn hơn")
+            }
+            number_check = prompt ("Nhập số bạn đoán");
+        }
+        if (count == 4) {
+            document.write("Bạn hết số lần đoán")
+        } else {
+            document.write("Bạn đã đoán đúng số. Chúc mừng bạn!")
+        }
+    }
+</script>
+</body>
+</html>
