@@ -84,5 +84,55 @@ document.write("<br>")
  }
 </script>
 
+<!--Bài 4-->
+<!--<script>-->
+<!--    let x = +prompt("Nhập cạnh 1");-->
+<!--    let y = +prompt("Nhập cạnh 2");-->
+<!--    let result = "";-->
+<!--    for (let i = 1; i <= x; i++) {-->
+<!--        for (let j = 1; j <= y; j++) {-->
+<!--            if(i == 1 || j == 1 || i==x || j==y){-->
+<!--            result += "*";-->
+<!--            }else {-->
+<!--                result += "&nbsp;&nbsp";-->
+<!--            }-->
+<!--        }-->
+<!--        result += "<br>";-->
+<!--    }-->
+<!--    document.write(result);-->
+<!--</script>-->
+
+<!--Bài 5-->
+<!--<script>-->
+<!--    let amount = +prompt("Số tiền muốn gửi");-->
+<!--    let month = +prompt("Số tháng muốn gửi");-->
+<!--    let interest = +prompt("Số lãi hàng tháng %");-->
+<!--    for (let i = 0; i < month; i++) {-->
+<!--        amount = amount + amount*interest/100;-->
+<!--    }-->
+<!--    document.write(amount.toFixed(2));-->
+<!--</script>-->
+
+
+<!--Bài 6-->
+<script>
+    let result = "";
+    for (let i = 1; i < 7; i++) {
+        for (let j = 1; j <= 7; j++) {
+            if (i == 1 && j ==1 || i == 1 && j ==4 || i == 1 && j ==7 || i == 5 && j ==1
+                || i == 5 && j == 2 || i == 4 && j == 1 || i == 4 && j == 7
+                || i == 5 && j == 6 || i == 5 && j == 7 || i == 6 && j == 1
+                || i == 6 && j == 2 || i == 6 && j == 3 || i == 6 && j == 5
+                || i == 6 && j == 6 || i == 6 && j == 7 ){
+
+                result += "&nbsp;&nbsp;&nbsp;";
+            }else{
+                result += "&nbsp;*";
+            }
+        }
+        result += "<br>";
+    }
+    document.write(result);
+</script>
 </body>
 </html>
