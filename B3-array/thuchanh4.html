@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm giá trị lớn nhất trong mảng</title>
+</head>
+<body>
+<script>
+    let arr= [1,2,4,6,4,3,7,9];
+    let max = arr[0];
+    let check = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if(max<arr[i]){
+            max = arr[i];
+            check = i;
+        }
+    }
+    document.write("Số lơn nhất trong mảng là "+arr[check]);
+</script>
+</body>
+</html>

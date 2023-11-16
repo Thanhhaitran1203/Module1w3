@@ -6,5 +6,83 @@
 </head>
 <body>
 
+<!--Bài 1-->
+<!--<script>-->
+<!--    let a = 0;-->
+<!--    let b = 1;-->
+<!--    let i = 2;-->
+<!--    let count = prompt("Nhập vào số chữ số muốn in ra");-->
+<!--    let text = "0 1 ";-->
+<!--    if (count>2) {-->
+<!--        while (i  < count) {-->
+<!--            let c = a + b;-->
+<!--            text = text + c + " ";-->
+<!--            a = b;-->
+<!--            b = c;-->
+<!--            i++;-->
+<!--        }-->
+<!--        document.write(text);-->
+<!--    }else{-->
+<!--        alert("Số đã nhập không hơp lệ! Mời bạn nhập lại");-->
+<!--        location.reload();-->
+<!--    }-->
+<!--</script>-->
+
+<!--Bài 2-->
+<!--<script>-->
+<!--    let number = +prompt("Nhập vào 1 số tự nhiên");-->
+<!--    let total = 1;-->
+<!--    let result = "";-->
+<!--    if (number<0){-->
+<!--        result = "Số nhập vào không hợp lệ";-->
+<!--    }else{-->
+<!--        for (let i = 1; i <= number; i++) {-->
+<!--            total = total * i;-->
+<!--        }-->
+<!--        resul-->
+<!--    }-->
+<!--    document.write(total);-->
+<!--</script>-->
+
+
+<!--Bài 3-->
+<script>
+ let i = +prompt("Cạnh");
+    for (let k = 0; k < i ; k++) {
+        for (let l = 0; l < k; l++) {
+        document.write("*");
+        }
+        document.write("<br>")
+    }
+document.write("<br>")
+    for (let j = 0; j < i ; j++) {
+        for (let k = i-j; k > 0 ; k--) {
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+
+
+ for (let j = i; j > 0 ; j--) {
+     for (let k = j; k > 0 ;k--) {
+         document.write("&nbsp;&nbsp");
+     }
+     for (let l = 0 ,k = i+1-j ; l < k;l ++) {
+         document.write("*")
+     }
+     document.write("<br>");
+ }
+document.write("<br>")
+ for (let k = 0; k < i ; k++) {
+     for (let l = 0; l < k; l++) {
+         document.write("&nbsp;&nbsp");
+     }
+     for (let j = i-k; j > 0 ; j--) {
+         document.write("*");
+     }
+     document.write("<br>")
+ }
+</script>
+
 </body>
 </html>

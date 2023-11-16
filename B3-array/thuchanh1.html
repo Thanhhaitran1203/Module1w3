@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Thực hành 1</title>
+</head>
+<body>
+<h2></h2>
+
+<label for="input"></label><input type="text" name="" id="input">
+<button id="add" onclick="addArray()">Add</button>
+<button id="disPlay" onclick="show()">Display</button>
+<div id="show"></div>
+<script>
+    let array = Array();
+    let x = 0;
+    function addArray(){
+        let a = document.getElementById("input").value;
+        array.push(a);
+        alert("Thêm phần tử " + a + " thành công")
+
+        // Cách 2
+        //  array[x] = document.getElementById("input").value;
+        // alert("Thêm phân tử "+ array[x] + " thành công");
+        // x++;
+        document.getElementById("input").value="";
+    }
+    function show(){
+        let e = "<hr>";
+        for (let i = 0; i < array.length; i++) {
+            e = e + array[i] + "<br>";
+        }
+        document.getElementById("show").innerHTML = e;
+    }
+</script>
+</body>
+</html>

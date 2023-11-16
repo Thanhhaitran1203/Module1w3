@@ -15,16 +15,19 @@
 <!--    </script>-->
 
 <!--Bài 2-->
-<!--<script>-->
-<!--let nhietdo= +prompt("Nhiệt độ hiện tại");-->
-<!--    if (nhietdo>100){-->
-<!--        alert("hạ nhiệt gấp");-->
-<!--    }else if (nhietdo<20){-->
-<!--        alert("Tăng nhiệt độ đi");-->
-<!--    }else {-->
-<!--        alert("Bình thường");-->
-<!--    }-->
-<!--</script>-->
+<script>
+let nhietdo= +prompt("Nhiệt độ hiện tại");
+    while (nhietdo < 20 || nhietdo > 100){
+        if (nhietdo<20){
+            alert("Tăng nhiệt lên");
+        }else if(nhietdo>100){
+            alert("Giảm nhiệt độ đi");
+        }bvg
+        nhietdo = +prompt("Nhập lại nhiệt độ");
+    }
+    alert("nhiệt độ bình thường");
+</script>
+
 
 
 <!--Bài3-->
@@ -109,30 +112,30 @@
 
 
 <!--Bài 8-->
-<button onclick="doanso()">Bắt đầu</button>
-<script>
-    function doanso() {
-        let number = +prompt("Nhập giới hạn mà bạn muốn");
-        let number_ran = Math.floor(Math.random() * number);
-        let number_check = +prompt ("Nhập số bạn đoán");
-        let count = 0;
-        while (number_check !== number_ran) {
-            count++;
-            if (count == 4) {
-                break;
-            } else if (number_check < number_ran) {
-                alert("Số bạn đoán bé hơn");
-            } else {
-                alert ("Số bạn đoán lớn hơn")
-            }
-            number_check = prompt ("Nhập số bạn đoán");
-        }
-        if (count == 4) {
-            document.write("Bạn hết số lần đoán")
-        } else {
-            document.write("Bạn đã đoán đúng số. Chúc mừng bạn!")
-        }
-    }
-</script>
+<!--<button onclick="doanso()">Bắt đầu</button>-->
+<!--<script>-->
+<!--    function doanso() {-->
+<!--        let number = +prompt("Nhập giới hạn mà bạn muốn");-->
+<!--        let number_ran = Math.floor(Math.random() * number);-->
+<!--        let number_check = +prompt ("Nhập số bạn đoán");-->
+<!--        let count = 0;-->
+<!--        while (number_check !== number_ran) {-->
+<!--            count++;-->
+<!--            if (count == 4) {-->
+<!--                break;-->
+<!--            } else if (number_check < number_ran) {-->
+<!--                alert("Số bạn đoán bé hơn");-->
+<!--            } else {-->
+<!--                alert ("Số bạn đoán lớn hơn")-->
+<!--            }-->
+<!--            number_check = prompt ("Nhập số bạn đoán");-->
+<!--        }-->
+<!--        if (count == 4) {-->
+<!--            document.write("Bạn hết số lần đoán")-->
+<!--        } else {-->
+<!--            document.write("Bạn đã đoán đúng số. Chúc mừng bạn!")-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
 </body>
 </html>
