@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thực hành 2</title>
+</head>
+<body>
+
+<label for="txt">Nhập từ</label>
+<input type="text" id="txt">
+<button id="tranSlate" onclick="tranSlate1()">Translate</button>
+<br>
+<p id="result">Ket qua</p>
+<script>
+    let eng = ["hello", "name"];
+    let vie = ["xin chào", "tên"];
+    let arr2 = [];
+    let arr1 = "QWERTYUIOPLKJHGFDSAZXCVBNM";
+    let result = [];
+    function tranSlate1(){
+        let str = document.getElementById("txt").value;
+        for (let i = 0; i < str.length; i++) {
+            if (arr1.indexOf(str[i]) !== -1){
+                arr2.push(str[i].toLowerCase());
+            }else {
+                arr2.push(str[i]);
+            }
+        }
+        let check = eng.indexOf(arr2.join(""));
+        if (check !== -1){
+        result = vie[check];
+        }else{
+            alert("Không có từ cần dịch");
+        }
+        document.write(result);
+    }
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
