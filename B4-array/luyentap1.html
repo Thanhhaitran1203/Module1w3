@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập 1</title>
+</head>
+<body>
+
+<script>
+
+    // Bài 1:
+    // let arr = [];
+    // let count = 0;
+    // for (let i = 1; i <= 10; i++) {
+    //     arr[i] = +prompt("Nhập vào phần tử thứ " + i);
+    // }
+    // for (let i = 1; i <= 10 ; i++) {
+    //     if(arr[i] >= 10  ){
+    //         count++;
+    //     }
+    // }
+    // alert("Trong các số vừa nhập có " +count+ " số lớn hơn hoặc bằng 10");
+
+
+    // Bài 2:
+    // let arr = [];
+    // let max = 0;
+    // let index = 0;
+    // for (let i = 0; i < 10; i++) {
+    //     arr[i] = +prompt("Nhập vào phần tử thứ " + (i + 1));
+    // }
+    // for (let i = 0; i < 10; i++) {
+    //     if (arr[i] > max ){
+    //         max = arr[i];
+    //         index = i;
+    //     }
+    // }
+    // document.write("Phần tử có giá trị lớn nhất là " + max + " ở vị trí thứ " +(index+1));
+
+
+    // Bài 3:
+    // let arr = [];
+    // let total = 0;
+    // let number = prompt("Nhập số phần tử");
+    // for (let i = 0; i < number; i++) {
+    //     arr[i] = prompt("Nhập phần tử thứ " + (i+1))
+    // }
+    // for (let i = 0; i < number; i++) {
+    //     total += Number(arr[i]);
+    // }
+    // let avg = total / number;
+    // document.write("Giá trị trung bình của mảng:" + avg.toFixed(2));
+
+    // Bài 4
+    // let arr = [];
+    //
+    // let number = prompt("Nhập số phần tử");
+    // for (let i = 0; i < number; i++) {
+    //     arr[i] = prompt("Nhập phần tử thứ " + (i+1))
+    // }
+    // document.write(arr.reverse())
+
+
+    // Bài 5
+    // let arr = ["u","e","o","a","i"];
+    // let arr1 = "QWERTYUIOPLKJHGFDSAZXCVBNM";
+    // let arr2 = [];
+    // let count = 0;
+    // let str = prompt("Nhập vào từ muốn kiểm tra");
+    // for (let i = 0; i < str.length; i++) {
+    //     if (arr1.indexOf(str[i]) !== -1){
+    //         arr2.push(str[i].toLowerCase());
+    //     }else {
+    //         arr2.push(str[i]);
+    //     }
+    // }
+    // for (let i = 0; i < arr2.length; i++) {
+    //     if(arr.indexOf(arr2[i]) !== -1 ){
+    //         count++
+    //     }
+    // }
+    // document.write("Số nguyên âm là:" + count);
+
+
+    // Bài 6:
+    // let arr = [];
+    // for (let i = 0; i < 10; i++) {
+    //     arr[i] = prompt("Nhập phần tử thứ " + (i+1));
+    // }
+    // let number = prompt("Nhập số cần tìm");
+    // if (arr.indexOf(number) !== -1){
+    //     document.write(number + " is in array");
+    // }else {
+    //     document.write(number + " is not in array");
+    // }
+
+
+    // Bài 7:
+    // let arr = [];
+    // for (let i = 0; i < 10; i++) {
+    //     arr[i] = prompt("Nhập phần tử thứ " + (i+1));
+    // }
+    // let number = prompt("Nhập số cần tìm");
+    // if (arr.indexOf(number) !== -1){
+    //     arr.splice(arr.indexOf(number),1);
+    // }else {
+    //     document.write(number + " is not in array");
+    // }
+
+
+    // Bài 8:
+    // let arr = [];
+    // for (let i = 0; i < 10; i++) {
+    //     arr[i] = prompt("Nhập phần tử thứ " + (i+1));
+    // }
+    // for (let i = 0; i < 10; i++) {
+    //     for (let j = i+1; j < 10 ; j++) {
+    //         if (arr[i]<arr[j]){
+    //             let tg = arr[i];
+    //             arr[i] = arr[j];
+    //             arr[j] = tg;
+    //         }
+    //     }
+    // }
+    // document.write(arr);
+
+
+    // Bài 9:
+    let a = [];
+    let b = [];
+    let c = [];
+    for (let i = 0; i < 10; i++) {
+        a[i] = prompt("Nhập phần tử thứ " + (i+1));
+    }
+    for (let i = 0; i < 10 ; i++) {
+        b[i] = prompt("Nhập phần tử thứ " + (i+1));
+    }
+    c = a.concat(b);
+    document.write(c);
+
+
+</script>
+</body>
+</html>
