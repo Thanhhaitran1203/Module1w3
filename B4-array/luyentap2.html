@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập 2</title>
+</head>
+<body>
+<script>
+
+    // Bài 1:
+    let a = [
+        [1, 2, 4, 6],
+        [5, 2, 8, 3],
+        [1, 0, 7, 9],
+        [4, 6, 5, 1],
+        [3, 1, 8, 9]
+    ];
+    for (const i in a) {
+        document.write("row "+ i);
+        for (const j in a[i]) {
+            document.write(" "+ a[i][j]);
+        }
+        document.write("<br>");
+    }
+
+    // Bài 2:
+    let b = ['a','e','r','q','w','r','t'];
+    console.log(b);
+    let c = b.reverse();
+    console.log(c);
+
+    // Bài 3:
+    // let arr3 = [];
+    // let number3 = prompt("Độ dài của mảng");
+    // for (let i = 0; i < number3; i++) {
+    //     arr3[i] = prompt("phần tử thứ" + (i+1));
+    // }
+    // console.log(arr3.length);
+
+
+    // Bài 4:
+    // let str = prompt("Nhập chuỗi");
+    // document.write("Độ dài của chuỗi là " + str.length);
+
+
+    // Bài 5:
+    // let str2 = prompt("nhập chuỗi 1");
+    // let str3 = prompt("nhập chuỗi 2");
+    //     if (str2 === str3){
+    //         document.write("Giống");
+    //     }else {
+    //         document.write("Không giống");
+    //     }
+
+    // Bài 6:
+    let arr6 = [];
+    let number6 = prompt("Độ dài của mảng");
+    for (let i = 0; i < number6; i++) {
+        arr6[i] = prompt("phần tử thứ" + (i+1));
+    }
+    let i = 0
+    for (const i in arr6) {
+        if (arr6[i].indexOf("-") !== -1) {
+            arr6[i] = "_";
+        }
+    }
+    document.write(arr6);
+</script>
+</body>
+</html>
